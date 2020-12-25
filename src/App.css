@@ -1,0 +1,19 @@
+html {
+  background-color: #ffd00f;
+}
+
+body {
+  font-family: 'VT323', monospace;
+}
+
+.app {
+  text-align: center;
+  font-family: 'VT323', monospace;
+  min-width: 1024px;
+}
+
+.pokedex {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}

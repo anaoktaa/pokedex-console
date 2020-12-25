@@ -1,0 +1,109 @@
+.button {
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: outset rgb(248, 187, 187) 6px;
+    transform: rotate(60deg);
+    background: radial-gradient( circle farthest-corner at 40% 25%, rgb(218, 237, 241) 9%, rgb(124, 214, 237) 20%, rgb(64, 90, 165) 62%, rgb(43, 125, 196) 100% );
+    cursor: pointer;
+}
+
+.main-light-bg {
+    width: 85px;
+    height: 85px;
+    background: snow;
+    border-radius: 50%;
+    z-index: 2;
+    border: 3px solid black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.main-light {
+    width: 70px;
+    height: 70px;
+    background: #00c2d5;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.main-light-shine {
+    width: 53px;
+    height: 53px;
+    margin-left: 5px;
+    background: #78F4FF;
+    border-radius: 50%;
+}
+
+.main-light-shiner {
+    width: 30px;
+    height: 30px;
+    margin-left: 6px;
+    position: relative;
+    top: 5px;
+    left: 1px;
+    background: #E3FDFF;
+    border-radius: 50%;
+}
+
+.panel-button-container {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr 0.6fr 0.6fr;
+    align-items: center;
+    justify-items: center;
+    width: 82%;
+    position: relative;
+    z-index: 1200;
+}
+
+.red-button, .yellow-button, .green-button {
+    width: 25px;
+    height: 25px;
+    margin-left: 6px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: inline-block;
+    position: relative;
+}
+
+.red-button-inner, .yellow-button-inner, .green-button-inner {
+    width: 15px;
+    height: 15px;
+    top: 1px;
+    left: 2px;
+    position: relative;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.red-button {
+    background: #D40303;
+    /* animation: blink .5s linear infinite; */
+}
+
+.yellow-button {
+    background: #CACA05;
+    /* animation: blink .5s linear infinite; */
+}
+
+.green-button {
+    background: #11B411;
+    /* animation: blink .5s linear infinite; */
+}
+
+.red-button-inner {
+    background: #ff8585;
+}
+
+.yellow-button-inner {
+    background: #E4E499;
+}
+
+.green-button-inner {
+    background: #49E449;
+}
