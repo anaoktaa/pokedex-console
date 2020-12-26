@@ -2,7 +2,7 @@ import React from 'react';
 
 import './panel-button.styles.css';
 
-const PanelButton = () => {
+const PanelButton = ({ loading }) => {
     return (
         <div className='panel-button-container'>
             <div className='main-light-bg'>
@@ -14,17 +14,17 @@ const PanelButton = () => {
                     </div>
                 </div>
             </div>
-            <div className='red-button'>
+            <div className={`red-button ${loading? 'blink' : ''}`}>
                 <div className='red-button-inner'>
 
                 </div>
             </div>
-            <div className='yellow-button'>
+            <div className={`yellow-button ${loading? 'blink' : ''}`}>
                 <div className='yellow-button-inner'>
 
                 </div>
             </div>
-            <div className='green-button'>
+            <div className={`green-button ${loading? 'blink' : ''}`}>
                 <div className='green-button-inner'>
 
                 </div>

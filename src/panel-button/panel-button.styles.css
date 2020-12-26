@@ -83,17 +83,27 @@
 
 .red-button {
     background: #D40303;
-    /* animation: blink .5s linear infinite; */
 }
 
 .yellow-button {
     background: #CACA05;
-    /* animation: blink .5s linear infinite; */
 }
 
 .green-button {
     background: #11B411;
-    /* animation: blink .5s linear infinite; */
+}
+
+.blink {
+    animation: blink .5s linear infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      box-shadow: 0px 0px 17px 7px rgba(255,255,255,1);
+    }
+    100% {
+      box-shadow: none;
+    }
 }
 
 .red-button-inner {
