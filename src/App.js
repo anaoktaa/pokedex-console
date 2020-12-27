@@ -24,14 +24,12 @@ const App = () => {
     });  
 
     const handleOnNext = () => {
-        console.log('next')
         setInitialPokemonId(Number(initialPokemonId)+1);
     }
 
     const handleOnPrev = () => {
         if (initialPokemonId <= 1) return;
         setInitialPokemonId(Number(initialPokemonId)-1);
-        console.log('prev')   
     }
 
     const handleSubmit = id => {

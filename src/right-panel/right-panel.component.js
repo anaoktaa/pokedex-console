@@ -28,9 +28,6 @@ const RightPanel = ({ stats, types, height, weight, onNext, onPrev, loading, onS
         ${stat.toString()}${sep.repeat(len - (val.toString().length + stat.toString().length))}${val.toString()}`;
         return output;
     }
-
-    console.log('default input ',defaultInput)
-
     return (
         <div className='right-panel'>
             <div className='yellow-background-clear'/>

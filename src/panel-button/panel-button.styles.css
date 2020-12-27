@@ -10,26 +10,37 @@
 }
 
 .main-light-bg {
+    padding: 5px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: outset rgb(248, 187, 187) 6px;
+    transform: rotate(60deg);
+    background: radial-gradient( circle farthest-corner at 40% 25%, rgb(218, 237, 241) 9%, rgb(124, 214, 237) 20%, rgb(64, 90, 165) 62%, rgb(43, 125, 196) 100% );
+    cursor: pointer;
+}
+
+.main-light-bg::after {
+    border: groove #460f0f 5px;
+    content: "";
     width: 85px;
     height: 85px;
-    background: snow;
+    position: absolute;
     border-radius: 50%;
-    z-index: 2;
-    border: 3px solid black;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-
+    left: -10px;
+    top: -10px;
+    border-style: double;
+    opacity: 0.75;  
 }
 
 .main-light {
-    width: 70px;
+    /* width: 70px;
     height: 70px;
     background: #00c2d5;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid black; */
+
+  
 }
 
 .main-light-shine {
@@ -53,10 +64,10 @@
 
 .panel-button-container {
     display: grid;
-    grid-template-columns: 1fr 0.6fr 0.6fr 0.6fr;
+    grid-template-columns: 1.5fr 0.6fr 0.6fr 0.6fr;
     align-items: center;
     justify-items: center;
-    width: 82%;
+    width: 90%;
     position: relative;
     z-index: 1200;
 }
@@ -82,15 +93,34 @@
 }
 
 .red-button {
-    background: #D40303;
+    border: outset rgb(245 103 103) 2px;
+    transform: rotate(60deg);
+    background: radial-gradient( circle farthest-corner at 40% 25%, rgb(241 206 206) 9%, rgb(234 56 56) 20%, #d40303 62%, rgb(193 64 69) 100% );
+}
+
+.red-button::after, .yellow-button::after, .green-button::after {
+    border: groove #500505 5px;
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    left: -7px;
+    top: -7px;
+    border-style: double;
+    opacity: 0.75;
 }
 
 .yellow-button {
-    background: #CACA05;
+    border: outset rgb(245 226 103) 2px;
+    transform: rotate(60deg);
+    background: radial-gradient( circle farthest-corner at 40% 25%, rgb(243 231 139) 9%, #e8c842 20%, #caca05 62%, #d8b113 100% );
 }
 
 .green-button {
-    background: #11B411;
+    border: outset rgb(175 183 169) 2px;
+    transform: rotate(60deg);
+    background: radial-gradient( circle farthest-corner at 40% 25%, rgb(197 241 158) 9%, rgb(173 251 124) 20%, #11b411 62%, rgb(117 239 56) 100% );
 }
 
 .blink {

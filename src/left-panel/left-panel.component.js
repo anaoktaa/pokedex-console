@@ -141,11 +141,8 @@ const LeftPanel = ({ id, name, description, sprites, loading, error }) => {
                     <div className='border'/>
                     <div className='gap'/>
                     <div className='border-short'/>
-                
                 </div>
             </div>
-         
-      
         </div>
     );
 }
